@@ -1,0 +1,152 @@
+:root{
+    --coffee_color: rgb(105, 79, 6);
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+
+.main-page{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5%;
+    grid-template-rows: 2.5% 2.5% 1% 1% 1% 1% 1% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5%;
+    width: 100%;
+    height: 900px;
+    background: url(../img/indexBackground5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+    @media screen and (min-width:1020px) {
+
+    
+
+    .nav-panel{
+        grid-column: 27;
+        grid-row: 3;
+        margin-top: -10px;
+    }
+    
+    .nav-btn{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        width: 1200%;
+        font-family: 'Montserrat-bold';
+    }
+    
+    .nav-links{
+        text-decoration: none;
+        color: rgb(43, 31, 0);
+        transition: 0.5s;
+    }
+    
+    .nav-list-1{
+        grid-column: 2;
+    }
+    
+    .nav-list-2{
+        grid-column: 4;
+    }.nav-list-3{
+        grid-column: 6;
+    }.nav-list-4{
+        grid-column: 8;
+    }
+    
+    .nav-links::after{
+        transition: 0.5s;
+    }
+    
+    .nav-links:hover, .nav-links:focus{
+        color: #fff;
+    }
+    
+    .nav-list{
+        display: inline;
+    }
+    
+    .logo-text{
+        grid-row: 1;
+        grid-column: 1;
+        width: fit-content;
+    }
+
+    .small-screen-open-navigation, .small-screen-navigation{
+        visibility: hidden;
+        display: none;
+        margin-top: -100000px;
+    }
+}
+        
+    
+@media screen and (max-width:1020px) {
+    .nav-panel{
+        visibility: hidden;
+    }
+
+    .small-screen-navigation{
+        width: 0;
+        height: 100%;
+        overflow-x: hidden;
+        position: fixed;
+        transition: ease-in 0.5s;
+        margin-left: 70%;
+        position: absolute;
+        background-color: white;
+        padding-top: 10%;
+        padding-left: 17%;
+
+    }
+
+    .small-screen-open-navigation{
+        width:35px;
+        grid-column: 37;
+        grid-row: 3;
+        cursor: pointer;
+    }
+
+    .small-screen-navigation-list{
+        list-style: none;
+    }
+
+    .small-screen-navigation-links{
+        color: rgb(43, 31, 0);
+        text-decoration: none;
+        font-family: 'Montserrat-Bold';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.logo-text{
+    font-family: 'Montserrat-bold';
+    padding: 20px;
+}
+
+.logo-span{
+    color: var(--coffee_color);
+
+}
+
+
+
+
